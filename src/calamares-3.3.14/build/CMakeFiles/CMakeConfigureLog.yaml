@@ -1,0 +1,1083 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      The system is: Linux - 6.15.2-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /bin/cc 
+      Build flags: -march=x86-64;-mtune=generic;-O2;-pipe;-fno-plt;-fexceptions;-Wp,-D_FORTIFY_SOURCE=3;-Wformat;-Werror=format-security;-fstack-clash-protection;-fcf-protection;-fno-omit-frame-pointer;-mno-omit-leaf-frame-pointer;-g;-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares;-flto=auto
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/4.0.3-dirty/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /bin/c++ 
+      Build flags: -march=x86-64;-mtune=generic;-O2;-pipe;-fno-plt;-fexceptions;-Wp,-D_FORTIFY_SOURCE=3;-Wformat;-Werror=format-security;-fstack-clash-protection;-fcf-protection;-fno-omit-frame-pointer;-mno-omit-leaf-frame-pointer;-Wp,-D_GLIBCXX_ASSERTIONS;-g;-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares;-flto=auto
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_64545/fast
+        /bin/make  -f CMakeFiles/cmTC_64545.dir/build.make CMakeFiles/cmTC_64545.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn'
+        Building C object CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto    -v -o CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1 -quiet -v -D_FORTIFY_SOURCE=3 /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_64545.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -O2 -Wformat=1 -version -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -o /tmp/cctR1luQ.s
+        GNU C23 (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 335c205337bb594afdc1dd844ba56be5
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o /tmp/cctR1luQ.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_64545
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_64545.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_64545' '-dumpdir' 'cmTC_64545.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7g8POE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -flto=auto -flto=auto --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_64545 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        collect2 version 15.1.1 20250425
+        /bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7g8POE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_64545 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -fresolution=/tmp/cc7g8POE.res -flinker-output=pie CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o 
+        /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -fresolution=/tmp/cc7g8POE.res -flinker-output=pie CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o 
+        LTO parallelism level set to 12
+        /bin/cc @/tmp/ccFwydKf
+        Using built-in specs.
+        COLLECT_GCC=/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v'   '-fltrans-output-list=/tmp/ccWlyQCK.ltrans.out' '-fwpa=12' '-fresolution=/tmp/cc7g8POE.res' '-flinker-output=pie'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto1 -quiet -dumpbase ./cmTC_64545.wpa -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIE -fcf-protection=full -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -fltrans-output-list=/tmp/ccWlyQCK.ltrans.out -fwpa=12 -fresolution=/tmp/cc7g8POE.res -flinker-output=pie @/tmp/ccObVLNa
+        GNU GIMPLE (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/../lib/:/lib/../lib/../lib/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v'   '-fltrans-output-list=/tmp/ccWlyQCK.ltrans.out' '-fwpa=12' '-fresolution=/tmp/cc7g8POE.res' '-flinker-output=pie' '-dumpdir' './cmTC_64545.wpa.'
+        make -f /tmp/cc3MWDRT.mk -j12 all
+        Using built-in specs.
+        COLLECT_GCC=/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v'   '-fltrans' '-o' '/tmp/ccWlyQCK.ltrans0.ltrans.o'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto1 -quiet -dumpbase ./cmTC_64545.ltrans0.ltrans -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIE -fcf-protection=full -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -fltrans /tmp/ccWlyQCK.ltrans0.o -o /tmp/ccSIhiU5.s
+        GNU GIMPLE (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v'   '-fltrans' '-o' '/tmp/ccWlyQCK.ltrans0.ltrans.o'
+         as -v --gdwarf-5 --64 -o /tmp/ccWlyQCK.ltrans0.ltrans.o /tmp/ccSIhiU5.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/../lib/:/lib/../lib/../lib/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v'   '-fltrans' '-o' '/tmp/ccWlyQCK.ltrans0.ltrans.o' '-dumpdir' './cmTC_64545.ltrans0.ltrans.'
+        GNU ld (GNU Binutils) 2.44.0
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_64545' '-dumpdir' 'cmTC_64545.'
+        /bin/cc -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -v -Wl,-v CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -o cmTC_64545
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_64545/fast]
+        ignore line: [/bin/make  -f CMakeFiles/cmTC_64545.dir/build.make CMakeFiles/cmTC_64545.dir/build]
+        ignore line: [make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-B4uVkn']
+        ignore line: [Building C object CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/bin/cc   -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp -D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto    -v -o CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250425 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1 -quiet -v -D_FORTIFY_SOURCE=3 /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_64545.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -O2 -Wformat=1 -version -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -o /tmp/cctR1luQ.s]
+        ignore line: [GNU C23 (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.1 20250425  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 335c205337bb594afdc1dd844ba56be5]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o /tmp/cctR1luQ.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_64545]
+        ignore line: [/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64545.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250425 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_64545' '-dumpdir' 'cmTC_64545.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7g8POE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -flto=auto -flto=auto --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_64545 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc7g8POE.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_64545] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zpack-relative-relocs] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.1.1 20250425]
+        ignore line: [/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7g8POE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_64545 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_64545.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        linker tool for 'C': /bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Running the C compiler's linker: "/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_e4d06/fast
+        /bin/make  -f CMakeFiles/cmTC_e4d06.dir/build.make CMakeFiles/cmTC_e4d06.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox'
+        Building CXX object CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o
+        /bin/c++   -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto    -v -o CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1plus -quiet -v -D_GNU_SOURCE -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e4d06.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -O2 -Wformat=1 -version -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -o /tmp/ccb89z3B.s
+        GNU C++17 (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: ce3489707740d94cce8827fad3390bdb
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb89z3B.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_e4d06
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4d06.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_e4d06' '-shared-libgcc' '-dumpdir' 'cmTC_e4d06.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjCJm8l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e4d06 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        collect2 version 15.1.1 20250425
+        /bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjCJm8l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e4d06 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -fresolution=/tmp/ccjCJm8l.res -flinker-output=pie CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o 
+        /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -fresolution=/tmp/ccjCJm8l.res -flinker-output=pie CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o 
+        LTO parallelism level set to 12
+        /bin/c++ @/tmp/ccbkOciu
+        Using built-in specs.
+        COLLECT_GCC=/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v' '-shared-libgcc'   '-fltrans-output-list=/tmp/ccMNJCrH.ltrans.out' '-fwpa=12' '-fresolution=/tmp/ccjCJm8l.res' '-flinker-output=pie' '-shared-libgcc'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto1 -quiet -dumpbase ./cmTC_e4d06.wpa -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIE -fcf-protection=full -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -fltrans-output-list=/tmp/ccMNJCrH.ltrans.out -fwpa=12 -fresolution=/tmp/ccjCJm8l.res -flinker-output=pie @/tmp/ccC1MSQJ
+        GNU GIMPLE (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/../lib/:/lib/../lib/../lib/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v' '-shared-libgcc'   '-fltrans-output-list=/tmp/ccMNJCrH.ltrans.out' '-fwpa=12' '-fresolution=/tmp/ccjCJm8l.res' '-flinker-output=pie' '-shared-libgcc' '-dumpdir' './cmTC_e4d06.wpa.'
+        make -f /tmp/ccUnWSKb.mk -j12 all
+        Using built-in specs.
+        COLLECT_GCC=/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250425 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v' '-shared-libgcc'   '-fltrans' '-o' '/tmp/ccMNJCrH.ltrans0.ltrans.o' '-shared-libgcc'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto1 -quiet -dumpbase ./cmTC_e4d06.ltrans0.ltrans -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIE -fcf-protection=full -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -fltrans /tmp/ccMNJCrH.ltrans0.o -o /tmp/ccsZhy2J.s
+        GNU GIMPLE (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250425, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v' '-shared-libgcc'   '-fltrans' '-o' '/tmp/ccMNJCrH.ltrans0.ltrans.o' '-shared-libgcc'
+         as -v --gdwarf-5 --64 -o /tmp/ccMNJCrH.ltrans0.ltrans.o /tmp/ccsZhy2J.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/../lib/:/lib/../lib/../lib/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIE' '-g' '-O2' '-fcf-protection=full' '-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-v' '-shared-libgcc'   '-fltrans' '-o' '/tmp/ccMNJCrH.ltrans0.ltrans.o' '-shared-libgcc' '-dumpdir' './cmTC_e4d06.ltrans0.ltrans.'
+        GNU ld (GNU Binutils) 2.44.0
+        COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_e4d06' '-shared-libgcc' '-dumpdir' 'cmTC_e4d06.'
+        /bin/c++ -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto -v -Wl,-v CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e4d06
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1] ==> [/usr/include/c++/15.1.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward] ==> [/usr/include/c++/15.1.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.1.1;/usr/include/c++/15.1.1/x86_64-pc-linux-gnu;/usr/include/c++/15.1.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox']
+        ignore line: []
+        ignore line: [Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_e4d06/fast]
+        ignore line: [/bin/make  -f CMakeFiles/cmTC_e4d06.dir/build.make CMakeFiles/cmTC_e4d06.dir/build]
+        ignore line: [make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-9fBMox']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/bin/c++   -march=x86-64 -mtune=generic -O2 -fno-plt -fexceptions         -Wp -D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp -D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto    -v -o CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250425 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1plus -quiet -v -D_GNU_SOURCE -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e4d06.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=x86-64 -mtune=generic -mno-omit-leaf-frame-pointer -g -O2 -Wformat=1 -version -fno-plt -fexceptions -fstack-clash-protection -fcf-protection=full -fno-omit-frame-pointer -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -o /tmp/ccb89z3B.s]
+        ignore line: [GNU C++17 (GCC) version 15.1.1 20250425 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.1 20250425  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ce3489707740d94cce8827fad3390bdb]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb89z3B.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-v' '-o' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_e4d06]
+        ignore line: [/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4d06.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250425 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=x86-64' '-mtune=generic' '-O2' '-fno-plt' '-fexceptions' '-Wformat=1' '-fstack-clash-protection' '-fcf-protection=full' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-g' '-ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares' '-flto=auto' '-flto=auto' '-v' '-o' 'cmTC_e4d06' '-shared-libgcc' '-dumpdir' 'cmTC_e4d06.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjCJm8l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e4d06 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccjCJm8l.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [-flto=auto] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e4d06] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-O1] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zpack-relative-relocs] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.1.1 20250425]
+        ignore line: [/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjCJm8l.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e4d06 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -O1 --sort-common --as-needed -z relro -z now -z pack-relative-relocs -v CMakeFiles/cmTC_e4d06.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Running the CXX compiler's linker: "/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/lib/cmake/Qt6/Qt6Dependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/lib/cmake/Qt6/Qt6Config.cmake:178 (include)"
+      - "CMakeLists.txt:354 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_42802/fast
+        /bin/make  -f CMakeFiles/cmTC_42802.dir/build.make CMakeFiles/cmTC_42802.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp'
+        Building C object CMakeFiles/cmTC_42802.dir/src.c.o
+        /bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall  -std=gnu99 -o CMakeFiles/cmTC_42802.dir/src.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp/src.c
+        Linking C executable cmTC_42802
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_42802.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_42802.dir/src.c.o -o cmTC_42802
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-N4i8hp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:137 (find_dependency)"
+      - "/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
+      - "/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake:53 (include)"
+      - "/lib/cmake/Qt6/Qt6Config.cmake:228 (find_package)"
+      - "CMakeLists.txt:354 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto"
+      CMAKE_CXX_FLAGS_DEBUG: "-Og -g -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_874b2/fast
+        /bin/make  -f CMakeFiles/cmTC_874b2.dir/build.make CMakeFiles/cmTC_874b2.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB'
+        Building CXX object CMakeFiles/cmTC_874b2.dir/src.cxx.o
+        /bin/c++ -DHAVE_STDATOMIC  -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto  -std=gnu++17 -o CMakeFiles/cmTC_874b2.dir/src.cxx.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB/src.cxx
+        Linking CXX executable cmTC_874b2
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_874b2.dir/link.txt --verbose=1
+        /bin/c++ -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -Werror=return-type -Wnon-virtual-dtor -Woverloaded-virtual -fdiagnostics-color=auto  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_874b2.dir/src.cxx.o -o cmTC_874b2
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-fmtSZB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:701 (check_library_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_7aec7/fast
+        /bin/make  -f CMakeFiles/cmTC_7aec7.dir/build.make CMakeFiles/cmTC_7aec7.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN'
+        Building C object CMakeFiles/cmTC_7aec7.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -o CMakeFiles/cmTC_7aec7.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN/CheckFunctionExists.c
+        Linking C executable cmTC_7aec7
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_7aec7.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_7aec7.dir/CheckFunctionExists.c.o -o cmTC_7aec7  /usr/lib/libX11.so /usr/lib/libXext.so
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-reCOJN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:716 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_81643/fast
+        /bin/make  -f CMakeFiles/cmTC_81643.dir/build.make CMakeFiles/cmTC_81643.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU'
+        Building C object CMakeFiles/cmTC_81643.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_81643.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU/CheckFunctionExists.c
+        Linking C executable cmTC_81643
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_81643.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_81643.dir/CheckFunctionExists.c.o -o cmTC_81643
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-gGAmsU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:730 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_e2127/fast
+        /bin/make  -f CMakeFiles/cmTC_e2127.dir/build.make CMakeFiles/cmTC_e2127.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb'
+        Building C object CMakeFiles/cmTC_e2127.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_e2127.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb/CheckFunctionExists.c
+        Linking C executable cmTC_e2127
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2127.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=connect -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_e2127.dir/CheckFunctionExists.c.o -o cmTC_e2127
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-R8KOhb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:739 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_98f44/fast
+        /bin/make  -f CMakeFiles/cmTC_98f44.dir/build.make CMakeFiles/cmTC_98f44.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ'
+        Building C object CMakeFiles/cmTC_98f44.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_98f44.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ/CheckFunctionExists.c
+        Linking C executable cmTC_98f44
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_98f44.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=remove -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_98f44.dir/CheckFunctionExists.c.o -o cmTC_98f44
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-5IkyKQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:748 (check_function_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_38a39/fast
+        /bin/make  -f CMakeFiles/cmTC_38a39.dir/build.make CMakeFiles/cmTC_38a39.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi'
+        Building C object CMakeFiles/cmTC_38a39.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_38a39.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi/CheckFunctionExists.c
+        Linking C executable cmTC_38a39
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_38a39.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=shmat -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_38a39.dir/CheckFunctionExists.c.o -o cmTC_38a39
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-FQScNi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:758 (check_library_exists)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/lib/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_00012/fast
+        /bin/make  -f CMakeFiles/cmTC_00012.dir/build.make CMakeFiles/cmTC_00012.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs'
+        Building C object CMakeFiles/cmTC_00012.dir/CheckFunctionExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=gnu99 -o CMakeFiles/cmTC_00012.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs/CheckFunctionExists.c
+        Linking C executable cmTC_00012
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_00012.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_00012.dir/CheckFunctionExists.c.o -o cmTC_00012  -lICE
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-mFWmUs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:160 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:65 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/modules/users/CMakeLists.txt:21 (check_symbol_exists)"
+    checks:
+      - "Looking for crypt_gensalt"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAS_CRYPT_GENSALT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_102d9/fast
+        /bin/make  -f CMakeFiles/cmTC_102d9.dir/build.make CMakeFiles/cmTC_102d9.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ'
+        Building C object CMakeFiles/cmTC_102d9.dir/CheckSymbolExists.c.o
+        /bin/cc   -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall  -std=gnu99 -o CMakeFiles/cmTC_102d9.dir/CheckSymbolExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ/CheckSymbolExists.c
+        Linking C executable cmTC_102d9
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_102d9.dir/link.txt --verbose=1
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -Wall  -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_102d9.dir/CheckSymbolExists.c.o -o cmTC_102d9  -lcrypt
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-c8TceJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:55 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_clobber"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FILESYSTEM_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_7143b/fast
+        /bin/make  -f CMakeFiles/cmTC_7143b.dir/build.make CMakeFiles/cmTC_7143b.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd'
+        Building C object CMakeFiles/cmTC_7143b.dir/CheckFunctionExists.c.o
+        /bin/cc  -I/usr/include/parted -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber -std=gnu99 -o CMakeFiles/cmTC_7143b.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd/CheckFunctionExists.c
+        Linking C executable cmTC_7143b
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_7143b.dir/link.txt --verbose=1
+        /bin/ld: /tmp/ccdLEMka.ltrans0.ltrans.o: in function `main':
+        /usr/src/debug/calamares/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd/CheckFunctionExists.c:17:(.text.startup+0x12): undefined reference to `ped_file_system_clobber'
+        collect2: error: ld returned 1 exit status
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_7143b.dir/CheckFunctionExists.c.o -o cmTC_7143b  /usr/lib/libparted.so /usr/lib/libparted-fs-resize.so
+        make[1]: *** [CMakeFiles/cmTC_7143b.dir/build.make:104: cmTC_7143b] Error 1
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-HQM9pd'
+        make: *** [Makefile:134: cmTC_7143b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:56 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_resize"
+    directories:
+      source: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe"
+      binary: "/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/asaad/calamares/src/calamares-3.3.14/CMakeModules;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FS_RESIZE_LIBRARY_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe'
+        
+        Run Build Command(s): /bin/cmake -E env VERBOSE=1 /bin/make -f Makefile cmTC_70f82/fast
+        /bin/make  -f CMakeFiles/cmTC_70f82.dir/build.make CMakeFiles/cmTC_70f82.dir/build
+        make[1]: Entering directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe'
+        Building C object CMakeFiles/cmTC_70f82.dir/CheckFunctionExists.c.o
+        /bin/cc  -I/usr/include/parted -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -DCHECK_FUNCTION_EXISTS=ped_file_system_resize -std=gnu99 -o CMakeFiles/cmTC_70f82.dir/CheckFunctionExists.c.o -c /home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe/CheckFunctionExists.c
+        Linking C executable cmTC_70f82
+        /bin/cmake -E cmake_link_script CMakeFiles/cmTC_70f82.dir/link.txt --verbose=1
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_sync_fast'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_timer_destroy_nested'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_exception_throw'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_new'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_assert'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_init'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_timer_set_state_name'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_read'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_file_system_probe_specific'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_test_sector_inside'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_read_alloc'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_exception_leave_all'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_timer_update'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_device_open'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_constraint_new'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_malloc'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_set'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_destroy'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_duplicate'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_write'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_unit_format'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_sync'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_file_system_probe'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ptt_geom_clear_sectors'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_alignment_any'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_device_close'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_map'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_exception_fetch_all'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_test_equal'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_test_overlap'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_set_end'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_alignment_init'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_exception_catch'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_timer_reset'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `fat16_type'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `fat32_type'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_geometry_test_inside'
+        /bin/ld: /usr/lib/libparted-fs-resize.so: undefined reference to `ped_timer_new_nested'
+        collect2: error: ld returned 1 exit status
+        /bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection         -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -g -ffile-prefix-map=/home/asaad/calamares/src=/usr/src/debug/calamares -flto=auto -DCHECK_FUNCTION_EXISTS=ped_file_system_resize -Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now          -Wl,-z,pack-relative-relocs -flto=auto  CMakeFiles/cmTC_70f82.dir/CheckFunctionExists.c.o -o cmTC_70f82  /usr/lib/libparted.so /usr/lib/libparted-fs-resize.so
+        make[1]: *** [CMakeFiles/cmTC_70f82.dir/build.make:104: cmTC_70f82] Error 1
+        make[1]: Leaving directory '/home/asaad/calamares/src/calamares-3.3.14/build/CMakeFiles/CMakeScratch/TryCompile-AjSLwe'
+        make: *** [Makefile:134: cmTC_70f82/fast] Error 2
+        
+      exitCode: 2
+...
